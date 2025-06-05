@@ -9,18 +9,92 @@ html {
   color: black;
 }
 
-.nonna {
-  font-weight: bold;
-  border: 3px solid;
+/* Container für die Zielpersonen */
+.container {
+  display: none;
+  flex-direction: column;
+  align-items: flex-start; /* Damit Text und h1 links im Container stehen */
+  justify-content: center;
+
   padding: 10px;
+  margin: 5px auto;
+  width: 550px;
 }
 
-p {
-  font-weight: normal;
+/* Flagge Einstellung*/
+.flag {
+  width: 100%;
+  height: 170px;
+  display: flex;
 }
 
-@media (min-width: 1024px) {
+/* Flagge Italien */
+.flag-it .green {
+  background-color: green;
+  flex: 1;
+}
+.flag-it .white {
+  background-color: white;
+  flex: 1;
+}
+.flag-it .red {
+  background-color: red;
+  flex: 1;
+}
+
+/* Flagge Deutschland */
+.flag-de {
+  flex-direction: column;
+}
+.flag-de .black {
+  background-color: black;
+  flex: 1;
+  width: 100%;
+}
+.flag-de .red {
+  background-color: red;
+  flex: 1;
+  width: 100%;
+}
+.flag-de .yellow {
+  background-color: yellow;
+  flex: 1;
+  width: 100%;
+}
+
+/* Flagge Frankreich */
+.flag-fr .blue {
+  background-color: blue;
+  flex: 1;
+}
+.flag-fr .white {
+  background-color: white;
+  flex: 1;
+}
+.flag-fr .red {
+  background-color: red;
+  flex: 1;
+}
+
+h1 {
+  text-align: left;
+}
+
+/* Media Queries: Wer sieht was? */
+@media (max-width: 767px) {
   .nonna {
-    display: none;
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .papa {
+    display: flex;
+  }
+}
+
+@media (min-width: 1200px) {
+  .tatie {
+    display: flex;
   }
 }
