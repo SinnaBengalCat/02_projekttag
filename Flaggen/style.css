@@ -9,7 +9,6 @@ html {
   color: black;
 }
 
-/* Container für die Zielpersonen */
 .container {
   display: none;
   flex-direction: column;
@@ -80,7 +79,6 @@ h1 {
   text-align: left;
 }
 
-/* Media Queries: Wer sieht was? */
 @media (max-width: 767px) {
   .nonna {
     display: flex;
